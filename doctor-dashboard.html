@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Doctor Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>Doctor Dashboard</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="view_patients.html">View Patients</a>
+            <a href="write_prescription.html">Write Prescription</a>
+            <a href="logout.html">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Welcome, Dr. <span id="doctorName"></span></h2>
+            <h3>Your Appointments</h3>
+            <ul id="doctorAppointments"></ul>
+        </section>
+        <section>
+            <h3>Patient Health Records</h3>
+            <ul id="doctorPatientRecords"></ul>
+        </section>
+    </main>
+    <script src="js/doctor-script.js"></script>
+</body>
+</html>

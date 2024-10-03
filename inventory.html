@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Manage Inventory</title>
+</head>
+<body>
+    <header>
+        <h1>Manage Inventory</h1>
+    </header>
+    <main>
+        <form id="inventoryForm">
+            <label for="item">Item Name:</label>
+            <input type="text" id="item" required>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" required>
+
+            <button type="button" onclick="addInventoryItem()">Add Item</button>
+        </form>
+        <h3>Current Inventory:</h3>
+        <ul id="inventoryList"></ul>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

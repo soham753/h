@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Track Health Data</title>
+</head>
+<body>
+    <header>
+        <h1>Track Your Health Data</h1>
+    </header>
+    <main>
+        <form id="healthDataForm">
+            <label for="bp">Blood Pressure:</label>
+            <input type="text" id="bp" placeholder="e.g., 120/80" required>
+
+            <label for="sugar">Blood Sugar Level:</label>
+            <input type="text" id="sugar" placeholder="e.g., 90" required>
+
+            <label for="heartRate">Heart Rate:</label>
+            <input type="text" id="heartRate" placeholder="e.g., 72" required>
+
+            <button type="button" onclick="trackHealth()">Record Data</button>
+        </form>
+        <h3>Your Recorded Health Data:</h3>
+        <ul id="recordedHealthData"></ul>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

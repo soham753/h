@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Book Appointment</title>
+</head>
+<body>
+    <header>
+        <h1>Book Appointment</h1>
+    </header>
+    <main class="appointment-container">
+        <form id="appointmentForm">
+            <label for="doctor">Select Doctor:</label>
+            <select id="doctor">
+                <option value="Dr. Smith">Dr. Smith</option>
+                <option value="Dr. Johnson">Dr. Johnson</option>
+            </select>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" required>
+
+            <button type="button" onclick="bookAppointment()">Book Appointment</button>
+        </form>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

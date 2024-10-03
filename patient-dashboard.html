@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Patient Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>Patient Dashboard</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="appointment.html">Book Appointment</a>
+            <a href="track_health.html">Track Health Data</a>
+            <a href="logout.html">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Welcome, <span id="patientName"></span></h2>
+            <h3>Your Appointments</h3>
+            <ul id="patientAppointments"></ul>
+        </section>
+        <section>
+            <h3>Your Health Records</h3>
+            <ul id="patientHealthRecords"></ul>
+        </section>
+        <section>
+            <h3>Digital Prescription</h3>
+            <ul id="patientPrescriptions"></ul>
+        </section>
+    </main>
+    <script src="js/patient-script.js"></script>
+</body>
+</html>

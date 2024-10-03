@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>Dashboard</h1>
+        <nav>
+            <a href="appointment.html">Book Appointment</a>
+            <a href="track_health.html" id="trackHealthLink">Track Health Data</a>
+            <a href="prescription.html" id="prescriptionLink">Digital Prescription</a>
+            <a href="inventory.html" id="inventoryLink">Manage Inventory</a>
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <section id="user-details">
+            <h2>Welcome, <span id="userName"></span></h2>
+            <p>Your role: <span id="userRole"></span></p>
+        </section>
+
+        <section id="appointment-list" style="display: none;">
+            <h3>Your Upcoming Appointments:</h3>
+            <ul id="appointments"></ul>
+        </section>
+
+        <section id="health-records" style="display: none;">
+            <h3>Your Health Records:</h3>
+            <ul id="healthRecords"></ul>
+        </section>
+
+        <section id="inventory-summary" style="display: none;">
+            <h3>Inventory Summary:</h3>
+            <ul id="inventorySummary"></ul>
+        </section>
+
+        <section id="prescription-history" style="display: none;">
+            <h3>Your Prescription History:</h3>
+            <ul id="prescriptionHistory"></ul>
+        </section>
+
+        <section id="analytics" style="display: none;">
+            <h3>Basic Analytics:</h3>
+            <p>Total Appointments: <span id="totalAppointments"></span></p>
+            <p>Total Prescriptions: <span id="totalPrescriptions"></span></p>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
